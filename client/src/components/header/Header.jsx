@@ -63,7 +63,7 @@ const Header = () => {
                 // Slide the sidebar in
                 tl.to('.nav-links-container', {
                     transform: 'translateX(0)',  // Using transform for smoother animation
-                    duration: 0.4,
+                    duration: 0.2,
                     ease: 'ease-in-out',
                 });
                 
@@ -71,7 +71,7 @@ const Header = () => {
                 tl.from(navLinksRef.current, {
                     opacity: 0,
                     x: 50,  // You can change x, y or other properties for the effect
-                    duration: 0.4,
+                    duration: 0.2,
                     delay: 0.2,
                     stagger: 0.2,
                 });
