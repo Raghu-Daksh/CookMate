@@ -45,7 +45,7 @@ const Contact = () => {
     
     try {
       await validSchema.validate(formData, { abortEarly: false });
-      const response = await axios.post('http://localhost:5000/userContact', formData)
+      const response = await axios.post('https://cookmate-8yiu.onrender.com/userContact', formData)
       console.log(response.data);
       if (response.status === 200) {
         alert('Form submitted successfully!');
