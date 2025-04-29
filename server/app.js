@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 require('./config/connect.js'); // Connect to MongoDB
 const app = express();
 const userRouter = require('./routes/userRoute.js')
