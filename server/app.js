@@ -12,7 +12,7 @@ app.use(express.json()); // Middleware to parse JSON requests
 app.use('/user', userRouter)
 app.use('/contact', userContactRouter)
 
-
+// Static files serve karna React build folder se
 
 app.listen(port, ()=>{
     console.log("Server is running on port 5000");
