@@ -24,7 +24,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            const res = await axios.post('https://cookmate-8yiu.onrender.com/login', user)
+            const res = await axios.post('https://cookmate-8yiu.onrender.com/user/login', user)
             console.log(res.data);
             if(res.data){
                 localStorage.setItem('user', JSON.stringify(res.data))
