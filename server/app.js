@@ -7,7 +7,7 @@ const cors = require('cors'); // Import CORS middleware
 const port = process.env.PORT || 4000; 
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://cookmate-1.onrender.com',
     credentials: true
 }));
 app.use(express.json()); // Middleware to parse JSON requests
