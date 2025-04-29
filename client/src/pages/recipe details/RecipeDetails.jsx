@@ -24,7 +24,7 @@ const RecipeDetails = () => {
                         <h1>Health Japanese Fried Rice</h1>
                         <div className='reciepe-details-overview-container'>
                             <div className='recipe-details-overview-user'>
-                                <img src={profile} alt="" />
+                                <img src={profile} alt="profile" />
                                 <div>
                                     <h3>Chef Name</h3>
                                     <p>15 march 2025</p>
@@ -67,7 +67,7 @@ const RecipeDetails = () => {
             </div>
             <div className='recipe-details-content' data-aos="fade-up">
                 <div className='recipe-details-content-img' data-aos="fade-up">
-                    <img src={img} alt="" />
+                    <img src={img} alt="img" />
                 </div>
                 <div className='recipe-details-content-text' data-aos="fade-up">
                     <h1>Nutrition Information</h1>
@@ -118,7 +118,7 @@ const RecipeDetails = () => {
                       <li>Maxime, in. Esse, inventore maiores!</li>
                     </div>
                     <div className='recipe-details-advertisement-img'>
-                            <img src={ad2} alt="" />
+                            <img src={ad2} alt="advertisment" />
                       
                     </div>
             </div>
