@@ -41,7 +41,7 @@ const Register = () => {
         await validSchema.validate(user, { abortEarly: false });
         console.log("validete", user);
         
-        const res = await axios.post('https://cookmate-8yiu.onrender.com', user)
+        const res = await axios.post('https://cookmate-8yiu.onrender.com/register', user)
         console.log("res", res.data);
         if(res.data){
           alert("User registered successfully")
