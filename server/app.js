@@ -12,11 +12,18 @@ app.use(express.json()); // Middleware to parse JSON requests
 app.use('/user', userRouter)
 app.use('/contact', userContactRouter)
 
-// Static files serve karna React build folder se
-app.use(express.static(path.join(__dirname, '..', 'client', 'build')));
+// Serve static files from the build directory
+app.use(express.static(path.join(__dirname, 'client', 'build')));
 
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'client', 'build', 'index.html'));
+//  For non-static routes (e.g., API routes)
+// app.get('/api/some-route', (req, res) => {
+//    // handle API request
+// });
+
+
+// For requests that don't match the static files or API routes, send the index.html.
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
 
 app.listen(port, ()=>{
