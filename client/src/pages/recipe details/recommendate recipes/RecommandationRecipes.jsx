@@ -48,7 +48,7 @@ const RecommandationRecipes = () => {
         {
             suggestionRecipes.map((recipe, index) => (
                 <div className='recommandation-recipe' key={index} data-aos="zoom-in">
-                    <img src={recipe.img} alt="" />
+                    <img src={recipe.img} alt="img" />
                     <div className='recommandation-recipe-content'>
                         <h1>{recipe.title}</h1>
 
