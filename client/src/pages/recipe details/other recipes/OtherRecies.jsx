@@ -36,7 +36,7 @@ const OtherRecies = () => {
       <div className="recipe-details-other-recipes-container">
         {recipes.map((recipe, index) => (
           <div className="recipe-details-other-recipe" key={index} data-aos="zoom-in"> 
-            <img src={recipe.img} alt="" />
+            <img src={recipe.img} alt="img" />
             <div className="recipe-details-other-recipe-text">
               <h3>{recipe.title}</h3>
               <p>{recipe.owner}</p>
