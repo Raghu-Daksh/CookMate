@@ -5,7 +5,7 @@ import img from '../../../assets/subscribe4.jpeg'
 const SubscribeCard = () => {
   return (
     <div className='subscribe-card'>
-        <img src={img} alt="" />
+        <img src={img} alt="subscribe" />
         <div className='subscribe-card-content'>
             <h1>Deliciousness to your inbox</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum voluptatibus assumenda sapiente earum rem maxime voluptate doloribus, vel quia error.</p>
