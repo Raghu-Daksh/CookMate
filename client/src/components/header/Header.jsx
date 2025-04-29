@@ -105,7 +105,7 @@ const Header = () => {
     return (
         <nav>`
             <div className='logo' ref={logoRef}>
-               <Link to='/'> <img src={logo} alt="" /></Link>
+               <Link to='/'> <img src={logo} alt="logo" /></Link>
             </div>
             <div className={`nav-links-container ${active ? 'active' : ''}`}>
                 <ul className='nav-links'>
