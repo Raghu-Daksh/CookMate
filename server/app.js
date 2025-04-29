@@ -17,10 +17,8 @@ app.use('/', userContactRouter)
 
 // Serve React static files
 app.use(express.static(path.join(__dirname, 'client/build')));
-
-// Fallback route for SPA (React)
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 app.listen(port, ()=>{
     console.log("Server is running on port 5000");
