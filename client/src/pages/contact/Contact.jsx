@@ -77,7 +77,7 @@ const Contact = () => {
     <div className='contact-container'>
     <div className='contact'>
         <div className='contact-left' data-aos="fade-right">
-          <img src={img} alt="" />
+          <img src={img} alt="contact-img" />
         </div>
         <div className='contact-right' data-aos="zoom-in">
           <h1>Contact Us</h1>
