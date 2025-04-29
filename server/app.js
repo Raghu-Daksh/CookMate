@@ -12,8 +12,8 @@ app.use(cors({
     credentials: true
 }));
 app.use(express.json()); // Middleware to parse JSON requests
-app.use('/', userRouter)
-app.use('/', userContactRouter)
+app.use('/user', userRouter)
+app.use('/contact', userContactRouter)
 
 // Serve React static files
 app.use(express.static(path.join(__dirname, 'client/build')));
