@@ -1,0 +1,134 @@
+.subscribe-card{
+    position: relative;
+    width: 100%;
+    margin: 3rem 0;
+    border-radius: 1rem;
+}
+.subscribe-card img{
+    border-radius: 3rem;
+    overflow: hidden;
+    width: 100%;
+    min-width: 300px;
+    max-height: 60vh;
+    object-fit: cover;
+}
+.subscribe-card-content{
+    /* background-color: grey; */
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.subscribe-card-content h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    padding: 0 2rem;
+}
+.subscribe-card-content p{
+    width: 55%;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 2rem;
+}
+.subscribe-card-btn {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.subscribe-card-btn input {
+    width: 100%;
+    padding: 2rem;
+    padding-right: 8rem; /* Make space for the button inside */
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.subscribe-card-btn button {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    padding: 1.3rem 2.5rem;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .subscribe-card img{
+        min-width: 350px;
+        max-height: 30vh;
+    }
+    .subscribe-card-content h1{
+        padding: 0 1.5rem;
+        font-size: 1.2rem;
+    }
+    .subscribe-card-content p{
+        width: 100%;
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+    }
+    .subscribe-card-btn input {
+        padding: 0.8rem;
+        font-size: 0.7rem;
+    }
+    .subscribe-card-btn button {
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+    }
+    .subscribe-card-btn {
+        max-width: 250px;
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width:480px){
+    .subscribe-card-content{
+       /* top: 5%;
+    margin-left: 1rem; */
+    }
+    .subscribe-card img{
+        min-width: 250px;
+        max-height: 30vh;
+        border-radius: 1.5rem;
+    }
+    .subscribe-card-content h1{
+        font-size: 1rem;
+        padding: 0 ;
+    }
+    .subscribe-card-btn input{
+        padding: 0.4rem;
+        border-radius: 10px;
+        font-size: 0.6rem;
+        width: 230px;
+        margin-left: 0.7rem;
+    }
+    .subscribe-card-btn button{
+        padding: 0.3rem 0.7rem;
+        font-size: 0.6rem;
+        margin-top: 2px;
+    }
+    .subscribe-card-content p{
+        width: 100%;
+        font-size: 0.5rem;
+        margin-top: 0.5rem;
+        padding: 0 ;    
+    }
+}
+/* @media screen and (max-width:320px){
+    .subscribe-card-content{
+        top: 15%;
+        margin-left: 0.5rem;
+     }
+} */

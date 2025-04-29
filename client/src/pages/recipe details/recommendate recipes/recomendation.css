@@ -1,0 +1,85 @@
+.recommandation-recipes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem auto;
+    justify-content: center;
+}
+
+.recommandation-recipe {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.recommandation-recipe:hover{
+    transform: scale(1.05) !important;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.recommandation-recipe img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.recommandation-recipe-content {
+    padding: 1rem;
+}
+
+.recommandation-recipe-content h1 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.recommandation-recipe-content-overview {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.recommandation-recipe-content-overview-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #555;
+}
+
+.recommandation-recipe-content-overview-item ion-icon {
+    font-size: 1.3rem;
+    color: #ff7e1b;
+}
+
+.recommandation-recipe-content-overview-item p {
+    font-size: 0.95rem;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .recommandation-recipes {
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .recommandation-recipe img{
+        height: 120px;
+    }
+    .recommandation-recipe {
+        width: 90%;
+    }
+
+    .recommandation-recipe-content h1 {
+        font-size: 1rem;
+    }
+
+    .recommandation-recipe-content-overview-item p {
+        font-size: 0.9rem;
+    }
+}

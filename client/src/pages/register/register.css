@@ -1,0 +1,66 @@
+.register{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.register .logo{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.register .logo img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.register-inputs label{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    color: grey;
+    margin-bottom: 0.5rem;
+    font-family: poppins, sans-serif;
+}
+
+.register .register-container{
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.register .register-container h1{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: poppins, sans-serif;
+}
+
+.register-inputs input{
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border: 1px solid #cccccc6c;
+    border-radius: 0.5rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.3rem;
+} 
+.register-btn{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #000000;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.register-inputs p{
+    font-size: 0.8rem;
+    color: red;
+    margin-top: -0.7rem;
+    margin-bottom: 1rem;
+}

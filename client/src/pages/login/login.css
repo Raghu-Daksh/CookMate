@@ -1,0 +1,73 @@
+.login{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-container .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.login-inputs label{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    color: grey;
+    margin-bottom: 0.5rem;
+    font-family: poppins, sans-serif;
+}
+.login-container .logo img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login .login-container{
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.login .login-container h1{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: poppins, sans-serif;
+}
+.login-inputs p{
+    font-size: 0.7rem;
+    color: red;
+    margin-top: -0.7rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+.login-inputs input{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border: 1px solid #cccccc6c;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.3rem;
+} 
+.login-btn{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #000000;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+}
+.login-btn:hover{
+    background-color: #075f2cde;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
