@@ -1,6 +1,7 @@
 .recipe-details-container{
     padding: 0.5rem 3rem;
     margin-top: 10%;
+    overflow-x: hidden;
 }
 .recipe-details-title h1{
     font-weight: bolder;
