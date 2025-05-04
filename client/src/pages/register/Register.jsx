@@ -11,9 +11,9 @@ const Register = () => {
   const [user, setUser] = useState({
     username: "",
     email: "",
-    age: "",
-    phoneNo: "",
-    password: ""
+    password: "",
+    confirmPassword: "",
+    
   });
 
   const [errors, setErrors] = useState()
@@ -21,9 +21,9 @@ const Register = () => {
   let validSchema = Yup.object({
     username: Yup.string().required("username is required"),
     email: Yup.string().email("invalid email format").required("email is required"),
-    age: Yup.number().required("age is required").positive("age must be a positive number").integer("age must be an integer").typeError("Age must be a numberr"),
-    phoneNo: Yup.string().required("phone number is required").matches(/^[0-9]+$/, "phone number must be a number").min(10, "phone number must be at least 10 digits").max(15, "phone number must be at most 15 digits"),
-    password: Yup.string().required("password is required").min(8, "password must be at least 8 characters"),
+     password: Yup.string().required("password is required").min(8, "password must be at least 8 characters"),
+    confirmPassword: Yup.string().oneOf([Yup.ref('password')], "passwords must match").required("confirm password is required"),
+
   });
 
 
@@ -77,15 +77,12 @@ const Register = () => {
                     <label htmlFor="email">Email</label>
                     <input onChange={handleUser} value={user.email} name='email' type="email" placeholder='Enter your email' required />
                     {errors && <p>{  errors.email}</p>}
-                     <label htmlFor="age">Age</label>
-                    <input onChange={handleUser} value={user.age} name='age' type="number" placeholder='Enter your Age' required />
-                    {errors && <p>{  errors.age}</p>}
-                    <label htmlFor="phoneNo">Phone Number</label>
-                    <input onChange={handleUser} value={user.phoneNo} name='phoneNo' type="number" placeholder='Enter your Phone Number' required />
-                    {errors && <p>{  errors.phoneNo}</p>}
                     <label htmlFor="text">Password</label>
                     <input onChange={handleUser} value={user.password} name='password' type="password" placeholder='Enter your Password' required />
                     {errors && <p>{  errors.password}</p>}
+                    <label htmlFor="confirmPassword">Confirm Password</label>
+                    <input onChange={handleUser} value={user.confirmPassword} name='confirmPassword' type="password" placeholder='Confirm your Password' required />  
+                    {errors && <p>{  errors.confirmPassword}</p>}
                 </div>
                 <button type="submit" className='register-btn' onClick={registerUser}>Register</button>
             </form>
